@@ -1,0 +1,29 @@
+.GreyText {
+  color: rgb(235, 235, 235);
+
+  margin-bottom: 48px;
+}
+
+.FullHeight {
+  padding: 24px 16px;
+
+  height: 100vh;
+
+  background: url("https://ng.cash/_nuxt/img/banner-beneficios.4cc079f.png");
+  color: #fff;
+}
+
+.FullWidth {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 1px solid #fff;
+
+  color: #fff;
+}
+
+.Button {
+  border: 1px solid #fff;
+}

@@ -1,0 +1,177 @@
+.Home {
+  padding: 32px 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  .Center {
+    max-width: 768px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.Balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 100%;
+
+  margin-bottom: 16px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(235, 235, 235);
+    box-shadow: 3px 3px 2px rgb(205, 205, 205);
+
+    padding: 4px 8px;
+    margin-bottom: 16px;
+
+    cursor: pointer;
+
+    svg {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100vw - 32px);
+    max-width: 768px;
+
+    background: rgb(235, 235, 235);
+    box-shadow: 3px 3px 2px rgb(205, 205, 205);
+
+    border-radius: 6px;
+    padding: 12px 40px;
+  }
+}
+
+.Filters {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 32px;
+  margin-bottom: 16px;
+
+  input,
+  select {
+    border-radius: 3px;
+
+    outline: none;
+    background: #fff;
+    box-shadow: 3px 3px 1px rgb(175, 175, 175);
+
+    border: 1px solid #000;
+
+    font-weight: 600;
+
+    width: calc(50% - 12px);
+    height: 40px;
+
+    padding: 0 4px;
+  }
+
+  select {
+    margin-left: 24px;
+  }
+}
+
+.Transactions {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  .Transaction {
+    display: flex;
+
+    margin-top: 24px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #000;
+
+    .Icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 24px;
+      border-radius: 50%;
+
+      width: 32px;
+      height: 32px;
+
+      align-self: center;
+    }
+
+    div {
+      margin-right: 16px;
+
+      p {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.FullWidth {
+  width: 100%;
+
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  button {
+    width: calc(50% - 8px);
+  }
+}
+
+.AddBalance {
+  input {
+    width: 100%;
+
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  .Success {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(25, 160, 25);
+  }
+}
+
+.EmptyTransactions {
+  text-align: center;
+  margin: 64px 0;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  img {
+    height: 200px;
+    margin-bottom: 24px;
+  }
+}
+
+.NoMargin {
+  margin-left: 0 !important;
+}

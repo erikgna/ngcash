@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  postgres:
+    build: .
+  redis:
+    image: "redis:latest"
+    ports:
+      - 6379:6379
+    volumes:
+      - /path/to/redis-persistence:/bitnami/redis/data
+  server:
+    depends_on:
+      - postgres
+      - redis
+    build: ./backend/.
+    ports:
+      - 8030:8030
+    environment:
+      - PORT=8030
+      - DATABASE_URL=postgresql://root:erik2202@postgres/ngcash?schema=public&connection_limit=5
+      - JWT_SECRET=daskdsakdsajjdfskadso
+      - REDIS=redis
+      - JWT_REFRESH_SECRET=csdfs03493if
+    command: sh -c "npx prisma db pull && npx prisma generate && npm run dev"
+  frontend:
+    depends_on:
+      - server
+    build: ./frontend/.
+    ports:
+      - 3000:3000

@@ -1,0 +1,48 @@
+.Primary,
+.Secondary {
+  color: #000;
+  background: #fff;
+
+  font-weight: 600;
+
+  border-radius: 6px;
+  border: 1px solid #000;
+
+  cursor: pointer;
+
+  padding: 12px 0;
+
+  box-shadow: 4px 4px 1px purple;
+
+  transition: 300ms ease-in;
+
+  &:hover {
+    background: rgba(209, 0, 209);
+    color: #fff;
+
+    &:disabled {
+      background: #fff;
+      color: #000;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.BlackShadow {
+  box-shadow: 4px 4px 1px #000;
+
+  &:hover {
+    background: rgb(25, 25, 25);
+  }
+}
+
+.Buttons {
+  display: flex;
+  align-items: center;
+
+  button {
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+}

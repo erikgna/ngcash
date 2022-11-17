@@ -1,0 +1,23 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 98.5vw;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  .Content {
+    background: #fff;
+    border-radius: 6px;
+
+    min-width: 330px;
+
+    padding: 32px 16px;
+  }
+}

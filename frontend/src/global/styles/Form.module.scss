@@ -1,0 +1,33 @@
+.DefaultForm {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  h5 {
+    font-size: 24px;
+
+    margin-bottom: 24px;
+  }
+
+  label {
+    font-weight: 500;
+
+    margin-bottom: 8px;
+  }
+
+  input {
+    outline: none;
+    margin-bottom: 24px;
+
+    padding: 4px 2px;
+  }
+
+  button {
+    margin-top: 32px;
+  }
+
+  strong {
+    cursor: pointer;
+  }
+}
